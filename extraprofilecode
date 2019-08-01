@@ -1,0 +1,35 @@
+ <Container>
+                <Header style={{ backgroundColor: '#fff', height: 80 }} />
+                <SearchBar
+                    placeholder="Search"
+                    onChangeText={this.updateSearch}
+                    value={search}
+                    containerStyle={{ backgroundColor: '#eceff1', }}
+                    inputContainerStyle={{ backgroundColor: '#fff' ,color:'#000'}}
+                />
+                <View style={styles.container}>
+                    <ScrollView>
+                     
+
+                        <View style={styles.number_bar}>
+                            <View style={{ flexDirection: 'column', width: '33%' }}>
+                                <Text style={styles.num_calculation}>80</Text>
+                                <Text note style={{ color: '#e0e0e0', alignSelf: 'center' }}>Friends</Text>
+                            </View>
+
+                            <View style={{ flexDirection: 'column', width: '33%' }}>
+                                <Text style={styles.num_calculation}>120</Text>
+                                <Text note style={{ color: '#e0e0e0', alignSelf: 'center' }}>Likes</Text>
+                            </View>
+
+                            <View style={{ flexDirection: 'column', width: '33%' }}>
+                                <Text style={styles.num_calculation}>20</Text>
+                                <Text note style={{ color: '#e0e0e0', alignSelf: 'center' }}>Queries</Text>
+                            </View>
+                        </View>
+
+                       
+                    </ScrollView>
+                    
+                </View>
+            </Container>
